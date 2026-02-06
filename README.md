@@ -55,9 +55,9 @@ To keep the repository clean, the dataset is not uploaded directly. Please refer
 ---
 
 ## 🚀 How to Run
-1.  **Clone the Repo:**
+1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/Patel-Sujal-18/Image-Classification-Project/blob/main/Image_Classification.ipynb]
+    
     ```
 2.  **Prepare Dataset:** Follow the folder structure mentioned in the Project Structure section.
 3.  **Load Model:** Ensure `vehicle_classifier_model.keras` is in the root directory.
