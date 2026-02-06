@@ -1,38 +1,74 @@
-# Image-Classification-Project
-A Deep Learning-based vehicle classifier using MobileNetV2 and Transfer Learning. Features Explainable AI (Grad-CAM) to generate visual heatmaps, highlighting exactly which features the model uses to distinguish between cars and bikes.
-# Project Overview
-This project uses Transfer Learning (MobileNetV2) to classify Cars vs. Bikes with high efficiency. It features Explainable AI (Grad-CAM) to generate visual heatmaps, revealing exactly which image features—like wheels or handlebars—drive the model's decision-making.
-# Key Features
-Car vs Bike Classification: High-accuracy binary classification.
+# 🚗 Vehicle Classification with Explainable AI (XAI) 🚲
 
-Transfer Learning: Efficient feature extraction using MobileNetV2.
+## 📌 Project Overview
+This project utilizes **Transfer Learning (MobileNetV2)** to classify **Cars vs. Bikes** with high efficiency and minimal computational overhead. 
 
-Explainable AI (Grad-CAM): Visual justification for every prediction.
+Beyond simple classification, it integrates **Explainable AI (Grad-CAM)**. This allows the model to "explain" its decision-making by generating visual heatmaps, revealing which specific features—like wheels, headlights, or handlebars—the model focused on to reach a prediction.
 
-Multi-View Interpretability: Outputs include grayscale attention maps, colored heatmaps, and original image overlays.
+---
 
-Confidence Scoring: Provides a probability percentage for every classification.
-Model Architecture
-Base Model: MobileNetV2 (Pretrained on ImageNet).
+## 🌟 Key Features
+* **High-Accuracy Classification:** Efficient binary classification between cars and bikes.
+* **Transfer Learning:** Optimized feature extraction using a pretrained **MobileNetV2** backbone.
+* **Explainable AI (Grad-CAM):** Provides visual justification for every prediction to eliminate "black-box" uncertainty.
+* **Multi-View Interpretability:** Supports grayscale attention maps, colored heatmaps, and original image overlays.
+* **Confidence Scoring:** Real-time probability percentages for every output.
 
-Global Average Pooling: Reduces spatial dimensions while retaining important features.
+---
 
-Classifier Head: Custom Dense layer for binary output.
+## 🏗 Model Architecture
 
-Framework: TensorFlow & Keras.
-Explainable AI (Grad-CAM)
-Grad-CAM (Gradient-weighted Class Activation Mapping) is used to:
 
-Highlight Critical Regions: Identify specific parts of the vehicle (e.g., the frame of a bike or the grille of a car) that drive the classification.
+* **Base Model:** MobileNetV2 (Pretrained on ImageNet).
+* **Global Average Pooling:** Used to reduce spatial dimensions while retaining critical features.
+* **Classifier Head:** Custom Dense layer designed for binary classification.
+* **Framework:** TensorFlow & Keras.
 
-Debug Model Logic: Ensure the model is looking at the vehicle and not the background.
+---
 
-Build Trust: Provide a visual "reasoning" for the classification.
+## 🔍 Explainable AI (Grad-CAM)
+Grad-CAM (Gradient-weighted Class Activation Mapping) is implemented to:
+1.  **Highlight Critical Regions:** Identify parts of the vehicle (e.g., the grille of a car or frame of a bike) that drive the classification.
+2.  **Debug Model Logic:** Verify that the model is focusing on the object rather than irrelevant background noise.
+3.  **Build Trust:** Provide a visual "reasoning" layer for users and developers.
 
-Visual Outputs:
 
-Original Image: The raw input.
 
-Heatmap: High-intensity regions indicating model focus.
+---
 
-Overlay: Combined view for direct comparison.
+## 📂 Project Structure
+To keep the repository clean, the dataset is not uploaded directly. Please refer to `project_structure.txt` for the full directory map.
+
+### Local Setup:
+1.  Create a folder named `dataset`.
+2.  Inside, create `train` and `test` folders.
+3.  Inside both, create subfolders named `car` and `bike`.
+4.  Populate these with your images (Recommended size: **224x224**).
+
+---
+
+## 📊 Dataset Information
+* **Source:** [Car vs Bike Classification Dataset (Kaggle)](https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset)
+* **Format:** RGB Images
+* **Input Size:** 224 x 224 pixels
+
+---
+
+## 🚀 How to Run
+1.  **Clone the Repo:**
+    ```bash
+    git clone [Your Repo Link]
+    ```
+2.  **Prepare Dataset:** Follow the folder structure mentioned in the Project Structure section.
+3.  **Load Model:** Ensure `vehicle_classifier_model.keras` is in the root directory.
+4.  **Execute:** Run the prediction script/notebook to see the:
+    * Classification Label
+    * Confidence Score
+    * Grad-CAM Heatmap Visualization
+
+---
+
+## 🛠 Future Improvements
+* Expansion to multi-class classification (Trucks, Vans, etc.).
+* Web-based deployment using **Streamlit**.
+* Real-time video stream classification.
