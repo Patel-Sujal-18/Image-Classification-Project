@@ -1,0 +1,35 @@
+IMAGE-CLASSIFICATION-PROJECT
+
+
+Dataset Source:
+The dataset used in this project is derived from the Microsoft Cars vs Bikes dataset,
+publicly available on Kaggle:
+
+https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset
+
+This dataset is commonly used for educational and research purposes in
+computer vision and deep learning tasks.
+
+--------------------------------------------------
+
+Project Structure: It is the structure of the Image Classification project.
+
+Image_Classification_Project/
+├── dataset/
+│   ├── train/
+│   │   ├── Car/      -> Training images of Cars
+│   │   └── Bike/      -> Training images of Bikes
+│   │
+│   └── test/
+│       ├── Car/      -> Testing images of Cars
+│       └── Bike/      -> Testing images of Bikes
+│
+├── car_bik_model.keras   -> Trained deep learning model
+
+
+--------------------------------------------------
+
+
+
+
+
