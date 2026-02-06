@@ -2,7 +2,7 @@ IMAGE-CLASSIFICATION-PROJECT
 
 
 Dataset Source:
-The dataset used in this project is derived from the Microsoft Cars vs Bikes dataset,
+The dataset used in this project is derived from the Cars vs Bikes dataset,
 publicly available on Kaggle:
 
 https://www.kaggle.com/datasets/utkarshsaxenadn/car-vs-bike-classification-dataset
@@ -24,7 +24,7 @@ Image_Classification_Project/
 │       ├── Car/      -> Testing images of Cars
 │       └── Bike/      -> Testing images of Bikes
 │
-├── car_bik_model.keras   -> Trained deep learning model
+├── car_bike_model.keras   -> Trained deep learning model
 
 
 --------------------------------------------------
