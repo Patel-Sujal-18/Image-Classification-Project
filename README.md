@@ -53,6 +53,8 @@ To keep the repository clean, the dataset is not uploaded directly. Please refer
 * **Input Size:** 224 x 224 pixels
 
 ---
+# Project Structure
+To keep the repository clean, the dataset is not uploaded directly. Refer to Project-Structure.txt for the directory map.
 
 ## 🚀 How to Run
 1.  **Clone the Repository:**
